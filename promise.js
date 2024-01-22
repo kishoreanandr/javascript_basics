@@ -46,26 +46,20 @@ Tatkal_book()
 
 
 //Eg=>3.Toss
-function toss()
-{
-    return new Promise(function(heads,tail)
-        {
-            const coin=Math.floor(Math.random()*2)
-            if(coin==1)
-            {
-                heads("Batting")
-            }
-            else
-            {
-                tail("Bowling")
-            }
-        })
+function toss() {
+    return new Promise(function (heads, tail) {
+        const coin = Math.floor(Math.random() * 2)
+        if (coin == 1) {
+            heads("Batting")
+        }
+        else {
+            tail("Bowling")
+        }
+    })
 }
-toss().then(function(win)
-{
-    console.log("I won I will Choose",win)
+toss().then(function (win) {
+    console.log("I won I will Choose", win)
 })
-.catch(function(loss)
-{
-    console.log(loss,"is your only option")
-})
+    .catch(function (loss) {
+        console.log(loss, "is your only option")
+    })
