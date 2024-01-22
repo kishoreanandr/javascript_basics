@@ -1,3 +1,5 @@
+//....In the promise first we will predict some output function and that output function will be called using then and catch for eg.then=>success  catch=>fail
+
 //Eg1 => Authetication Page
 function isAuthenticated() {
     return Math.random() > 1;
@@ -24,7 +26,7 @@ Login()
 
 //Eg:2 => Tatkal train booking
 function Tatkal_book() {
-    return new Promise(function (resolve, fail) {
+    return new Promise(function (resolve, fail) {   //resolve=>then ,fail=>catch 
         const rand = Math.floor(Math.random() * 2)
         //1=>success 0=>failure
         if (rand == 1) {
