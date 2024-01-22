@@ -3,7 +3,7 @@ for(let i=0;i<2;i++)
 {
     console.log(i)
 }
-// console.log(i) => let will work only in that particular function only
+// console.log(i) => let will work only in that particular function only(reference error)//interview question
 
 //globalscope
 var a=10 //it is a global scope
