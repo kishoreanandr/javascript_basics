@@ -1,62 +1,62 @@
-// // //for loop
-// // var i;
-// // n=10
-// // console.log("The values are: ")
-// // for(i=0;i<n;i++)
-// // {
-// //     console.log(i)
-// // }
+//for loop
+var i;
+n=10
+console.log("The values are: ")
+for(i=0;i<n;i++)
+{
+    console.log(i)
+}
 
-// // //while loop
-// // var sum=0;
-// // var i=0;
-// // n=10
-// // while(i<=n)
-// // {
-// //     sum+=i;
-// //     i++;
-// // }
-// // console.log("The sum is: "+sum)
+//while loop
+var sum=0;
+var i=0;
+n=10
+while(i<=n)
+{
+    sum+=i;
+    i++;
+}
+console.log("The sum is: "+sum)
 
-// // //do while
-// // i=0
-// // do{
-// //     console.log(i)
-// // }while(i>0)
+//do while
+i=0
+do{
+    console.log(i)
+}while(i>0)
 
 
 // //example1
-// // var i;
-// // arr=[10,20,30]
-// // for(i=0;i<arr.length;i++)
-// // {
-// //     console.log(arr[i])
-// // }
+var i;
+arr=[10,20,30]
+for(i=0;i<arr.length;i++)
+{
+    console.log(arr[i])
+}
 
-// // //example2
-// // var i;
-// // arr=[10,20,30,20.1,20.2]
-// // for(i=0;i<arr.length;i++)
-// // {
-// //     console.log(arr[i])
-// // }
+//example2
+var i;
+arr=[10,20,30,20.1,20.2]
+for(i=0;i<arr.length;i++)
+{
+    console.log(arr[i])
+}
 
 
 // //example 3
-// // var i;
-// // arr=[10,20,true,false]
-// // for(i=0;i<arr.length;i++)
-// // {
-// //     console.log(arr[i]);
-// // }
+var i;
+arr=[10,20,true,false]
+for(i=0;i<arr.length;i++)
+{
+    console.log(arr[i]);
+}
 
-// //example4
-// var i;
-// var details=[110,"Kishore","ECE",true,9.3]
-// for(i=0;i<details.length;i++)
-// {
-//     console.log(details[i]);
-// }
+//example4
+var i;
+var details=[110,"Kishore","ECE",true,9.3]
+for(i=0;i<details.length;i++)
+{
+    console.log(details[i]);
+}
 
 
 // //for in loop
@@ -70,8 +70,14 @@ for(values in college)
     console.log(values);
 }
 
+// college=Object.entries(college)
+// //for each example
+// college.forEach(([key,element]))=>{
+//     console.log(key,":",element)
+// }
 
-// //for of
+
+//for of
 // for(const values of college)
 // {
 //     console.log(values);

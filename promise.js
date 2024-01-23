@@ -37,7 +37,6 @@ function Tatkal_book() {
         }
     })
 }
-
 Tatkal_book()
     .then(function (amt) {
         console.log("Thanks Buddy! I will send the amount", amt)
@@ -49,7 +48,8 @@ Tatkal_book()
 
 //Eg=>3.Toss
 function toss() {
-    return new Promise(function (heads, tail) {
+    return new Promise(function (heads, tail) //heads=>then ,tail=>catch
+    {
         const coin = Math.floor(Math.random() * 2)
         if (coin == 1) {
             heads("Batting")
@@ -64,4 +64,44 @@ toss().then(function (win) {
 })
     .catch(function (loss) {
         console.log(loss, "is your only option")
+    })
+
+
+//Eg4:=> Google Maps(location tracking)
+
+function islocationvalid() {
+    var v = "valid";
+    if (v == "valid") {
+        return true
+    }
+    else {
+        return false
+    }
+}
+function location() {
+    return new Promise(
+        function (responsee, eror) {
+            setTimeout(
+                function () {
+                    loc = "chennai"
+                    console.log("Location Entered was: ", loc);
+                    if (islocationvalid()) {
+                        return responsee("Location Found");
+                    }
+                    else {
+                        return eror("Location not Found");
+                    }
+                }
+                , 2000
+            )
+        }
+    )
+}
+
+location()
+    .then(function (responsee) {
+        console.log(responsee)
+    })
+    .catch(function (eror) {
+        console.log(eror)
     })
