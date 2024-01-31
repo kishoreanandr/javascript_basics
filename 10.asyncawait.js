@@ -1,7 +1,7 @@
 //Eg:1=>Async Await demo Example 
-async function asAw() {
+async function asAw(){
     var promise = new Promise(
-        function (response) {
+        (response)=>{
             setTimeout(function () {
                 response("Example for SYNC/AWAIT");
             }, 1000)

@@ -35,7 +35,7 @@ console.log((100&&0)||20)
 console.log((100&&100)&&20)
 
 
-Relational Operator->  <,>,<=,>=,===,!==, Output=> True/False
+// Relational Operator->  <,>,<=,>=,===,!==, Output=> True/False
 aR=10
 bR=30
 aRR="Hai"

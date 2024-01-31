@@ -1,5 +1,5 @@
 /*#############----------Set---------#############*/
-/*
+
 //obj=new obj()
 //set->collection of unique elements
 
@@ -30,7 +30,7 @@ for(values of setExample)
 setExample.forEach(element => {
     console.log(element)
 });
-*/
+
 
 
 
@@ -48,15 +48,15 @@ console.log(mapEg.has("Name")) //if key is present it will show true
 mapEg.set("num","110") //it will add the element
 mapEg.delete("num")  //it will delete the element
 console.log(mapEg)
-// //for in
-// for(element in mapEg)
-// {
-//     console.log(element)
-// }
+//for in
+for(element in mapEg)
+{
+    console.log(element)
+}
 
-// //for of
-// for(element of mapEg)
-// {
-//     console.log(element)
-// }
+//for of
+for(element of mapEg)
+{
+    console.log(element)
+}
 
